@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pet Adoption Application</title>
+  </head>
+  <body>
+    <h1>Adopt a Pet Today!</h1>
+    <form>
+      <label>Your Full Name:
+        <input type="text" name="full-name" required>
+      </label>
+
+      <label>Age:
+        <input type="text" name="age">
+      </label>
+
+      <label>City:
+        <input type="text" name="city">
+      </label>
+
+      <label>Country:
+        <input type="text" name="country">
+      </label>
+
+      <label for="pet-name">What would you name your dog:</label>
+      <input type="text" name="pet-name" id="pet-name" placeholder="Sparky">
+
+      <label for="personality">What personality do you like in a pet?</label>
+      <select name="personality" id="personality">
+        <option value="goofy">Goofy</option>
+        <option value="brave">Brave</option>
+        <option value="mopey">Mopey</option>
+        <option value="hyper">Hyper</option>
+        <option value="sweet" selected>Sweet</option>
+      </select>
+
+      <fieldset>
+        <legend>How many kids do you have?</legend>
+        <label>Zero
+        <input type="radio" name="child-count" value="0"></label>
+
+        <label>1
+        <input type="radio" name="child-count" value="2"></label>
+
+        <label>more than 1
+        <input type="radio" name="child-count" value="4" checked></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What pet do you want?</legend>
+        <label>Hamster
+        <input type="checkbox" name="species" value="hamster"></label>
+
+        <label>Cat
+        <input type="checkbox" name="species" value="cat"></label>
+      </fieldset>
+
+      <label>Describe:
+      <input type="textarea" name="describe"></label>
+
+      <input type="submit" name="submit" value="Get a Dog!">
+
+    </form>
+  </body>
+</html>
