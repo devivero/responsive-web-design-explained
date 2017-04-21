@@ -2,64 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Pet Adoption Application</title>
+    <title>Responsive Web Design</title>
   </head>
   <body>
-    <h1>Adopt a Pet Today!</h1>
+    <h1>Responsive Web Design!</h1>
+    <article>
+      Responsive Web design is the approach that suggests that design and development should respond to the user's behavior and environment based on screen size, platform and orientation.
+       The practice consists of a mix of flexible grids and layouts, images and an intelligent use of CSS media queries.
+    </article>
+    <br><br>
     <form>
-      <label>Your Full Name:
-        <input type="text" name="full-name" required>
-      </label>
-
-      <label>Age:
-        <input type="text" name="age">
-      </label>
-
-      <label>City:
-        <input type="text" name="city">
-      </label>
-
-      <label>Country:
-        <input type="text" name="country">
-      </label>
-
-      <label for="pet-name">What would you name your dog:</label>
-      <input type="text" name="pet-name" id="pet-name" placeholder="Sparky">
-
-      <label for="personality">What personality do you like in a pet?</label>
+      <fieldset>
+        <legend>Did you find this information helpfull?</legend>
+        <label>Yes
+          <input type="radio" name="child-count" value="0"></label>
+        <label>No
+          <input type="radio" name="child-count" value="2"></label>
+      </fieldset>
+      <br>
+      <label for="personality">Rate this information from 1 to 5 (5 beinng the most awesome description in the world).</label>
       <select name="personality" id="personality">
-        <option value="goofy">Goofy</option>
-        <option value="brave">Brave</option>
-        <option value="mopey">Mopey</option>
-        <option value="hyper">Hyper</option>
-        <option value="sweet" selected>Sweet</option>
+        <option value="1" required>Goofy</option>
+        <option value="2" required>Brave</option>
+        <option value="3" required>Mopey</option>
+        <option value="4" required>Hyper</option>
+        <option value="5" selected required>Sweet</option>
       </select>
 
+      <br><br>
+      <label for="pet-name">Use one word to describe what you just read.</label>
+      <input type="text" name="pet-name" id="pet-name" placeholder="Awesome!">
+
+      <br><br>
       <fieldset>
-        <legend>How many kids do you have?</legend>
-        <label>Zero
-        <input type="radio" name="child-count" value="0"></label>
+        <legend>What other subjects are you interest in learning about?</legend>
+        <label>Y1
+        <input type="checkbox" name="subject" value="y1"></label>
 
-        <label>1
-        <input type="radio" name="child-count" value="2"></label>
+        <label>Y2
+        <input type="checkbox" name="subject" value="y2"></label>
 
-        <label>more than 1
-        <input type="radio" name="child-count" value="4" checked></label>
+        <label>Y3
+        <input type="checkbox" name="subject" value="y3"></label>
       </fieldset>
+      <br>
 
-      <fieldset>
-        <legend>What pet do you want?</legend>
-        <label>Hamster
-        <input type="checkbox" name="species" value="hamster"></label>
-
-        <label>Cat
-        <input type="checkbox" name="species" value="cat"></label>
-      </fieldset>
-
-      <label>Describe:
-      <input type="textarea" name="describe"></label>
-
-      <input type="submit" name="submit" value="Get a Dog!">
+      <input type="submit" name="submit" value="Submit survey">
 
     </form>
   </body>
